@@ -2,8 +2,9 @@ public class fighter {
     String name;
     int hp = 100;
 
-    void attack(){
-         System.out.println(name+" attacked!");
-
+    int attack(int hp){
+        System.out.println(name+" attacked!");
+        hp -=10;
+        return hp;
     }
 }

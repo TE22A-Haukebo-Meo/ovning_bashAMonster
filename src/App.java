@@ -8,10 +8,10 @@ public class App {
         e1.name = "Du";
 
         while (e1.hp > 0) {
-            p1.attack();
-            e1.hp -= 10;
+            e1.hp = p1.attack(e1.hp);
+            /*e1.hp -= 10;*/
             System.out.println("Du har nu hp:"+e1.hp);
-            Thread.sleep(500);   
+            Thread.sleep(500);
         }
         
     }
