@@ -5,9 +5,9 @@ public class fighter {
     String name;
     int hp = 100;
 
-    int attack(int hp){
+    int attack(int hp, int dmg){
         System.out.println(name+" attacked!");
-        hp -= tb.nextInt();
+        hp -= dmg;
         return hp;
     }
 }
